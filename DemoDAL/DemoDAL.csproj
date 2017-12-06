@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UOW\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Facade\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Entities\Address.cs" />
+    <Compile Remove="Entities\Customer.cs" />
+    <Compile Remove="Entities\CustomerAddress.cs" />
+    <Compile Remove="Entities\Order.cs" />
+    <Compile Remove="Repositories\CustomerRepository.cs" />
+    <Compile Remove="Repositories\CustomerRepositoryFakeDB.cs" />
+    <Compile Remove="Entities\Allergy.cs" />
+    <Compile Remove="Repositories\AllergyRepository.cs" />
+    <Compile Remove="IAllergyRepository.cs" />
+  </ItemGroup>
+</Project>
