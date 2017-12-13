@@ -35,7 +35,7 @@ namespace DemoDAL.UOW
                 context = new EASVContext(options);
             }
             /*
-            ///Ensure sql queries are created
+            //Ensure sql queries are created
             context.Database.EnsureCreated();
             */
             ProductRepository = new ProductRepository(context);

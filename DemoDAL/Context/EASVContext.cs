@@ -18,7 +18,7 @@ namespace DemoDAL.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=tcp:allegynothankyoudbserver.database.windows.net,1433;Initial Catalog=AllegyNoThankYouDB;Persist Security Info=False;User ID=jede;Password=Easv1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                optionsBuilder.UseSqlServer(@"Server=tcp:testallegynothankyou.database.windows.net,1433;Initial Catalog=TestAllegyNoThankYouDB;Persist Security Info=False;User ID=edijavi;Password=Javier8716;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
         */
